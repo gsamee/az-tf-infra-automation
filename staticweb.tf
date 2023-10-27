@@ -22,7 +22,7 @@ resource "azurerm_public_ip" "sam_pip" {
     ip_version              = "IPv4"
     location                = "canadacentral"
     name                    = "pip-samm-test"
-    resource_group_name     = "rg-mfmobile3-dev-centralus"
+    resource_group_name     = "rg-samtest1-dev-centralus"
     sku                     = "Standard"
     sku_tier                = "Regional"
     tags                    = {
