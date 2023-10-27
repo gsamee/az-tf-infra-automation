@@ -29,3 +29,19 @@ resource "azurerm_public_ip" "sam_pip" {
         "CreatedBy" = "Sameera"
     }
 }
+
+resource "azurerm_public_ip" "sam1_pip" {
+    allocation_method       = "Static"
+    ddos_protection_mode    = "VirtualNetworkInherited"
+    idle_timeout_in_minutes = 4
+    ip_tags                 = {}
+    ip_version              = "IPv4"
+    location                = "canadacentral"
+    name                    = "pip-samm-dev"
+    resource_group_name     = "rg-samtest1-dev-centralus"
+    sku                     = "Standard"
+    sku_tier                = "Regional"
+    tags                    = {
+        "CreatedBy" = "Sameera"
+    }
+}
